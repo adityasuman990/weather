@@ -58,4 +58,4 @@ const url ="https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid=23
 });
     
     
-app.listen(3000, () => console.log('Weather+ app is listening on port 3000.'));
+app.listen(process.env.PORT || 3000, () => console.log('Weather+ app is listening on port 3000.'));
